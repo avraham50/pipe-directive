@@ -26,6 +26,7 @@ import { ChangeDirective } from './directivs/change.directive';
 // import { SelectService } from './servicees/select.service';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { MatModule } from './modules/material-module';
+import { Pipe1Pipe } from './pipes/pipe1.pipe';
 // import { SelectCurrService } from './servicees/select-curr.service';
 
 
@@ -51,6 +52,7 @@ import { MatModule } from './modules/material-module';
     OpacityDirective,
     LoggerDirective,
     ChangeDirective,
+    Pipe1Pipe
     // SelectService,
     // SelectCurrService
     
