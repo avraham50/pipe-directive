@@ -1,0 +1,50 @@
+<p>comp1 works!</p>
+
+<div>ariel uperCase:   {{ "ariel"| pipeBig }} </div>
+<div>this date:        {{ ""| pipeDate }}</div>
+<div>allCapital =     {{"ariel" | pipeAllBig}}</div>
+<div>unCapital =       {{"AVRAHAM" | pipeAllLow }}</div>
+<div>un all Capital = {{"Avraham" | pipeAllLow }}</div>
+<div appOpacity>sayHello =        {{"Avratech" | pipeSayHello }}</div>
+<div>incr = 4 => 5:       {{4 | pipeIncr }} </div>
+<div>decr = 4 => 3:        {{4 | pipeDecr }} </div>
+<div>names befor change: {{names}}</div>
+<div>{{ names | pipeFilter: sName }}</div>
+<div>{{ names | pipeTopTen }}  </div>
+<div>names befor change: {{names}}</div>
+<div>maxVal => {{[55,2,66,4,22,3,4] | pipeMaxVal }}</div>
+<div appColorHover='red' enlarge="true" >minVal => {{[55,26,66,4,22,3,4] | pipeMinVal }}</div>
+<div >
+<input type="text" [(ngModel)]='sName' appColorHover="yellow" >
+</div>
+<button appVisibility>appVisibility</button>
+<button appOpacity>OpacityDirective</button>
+<input appLogger>
+<!-- <div #selCurrGroup >{{}}</div> -->
+
+<select appChange>
+    <option>Devops</option>
+    <option>Inbeded</option>
+    <option>Web</option>
+    <option>Mobile</option>
+    <option>Siber</option>
+</select>
+<mat-chip-list>
+    <mat-chip>Avraham</mat-chip>
+    <mat-chip>Mosheh</mat-chip>
+    <mat-chip>my Friend</mat-chip>
+</mat-chip-list>
+
+
+
+
+<!-- highlight - color on hover
+2. invis - visibility:hidden on hover
+3. enlarger - make larger font on each click
+4. cloud - make opacity and shadow order on hover
+5. logger - console.log on click
+6. loggerValue - console.log on input event (input element only)
+7. blury - on blur event alert "dont leave me!"
+8. charger - on change event (select) update service value
+9. tiktok - AfterContentChecked and log something (implement interface)
+ -->

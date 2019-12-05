@@ -1,0 +1,19 @@
+
+.mat-chip.mat-standard-chip {
+    background-color: #86fa90;
+    color: rgba(216, 64, 27, 0.87);
+    margin: 2vw;
+    padding: 2vw;
+}
+.mat-standard-chip::after {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    border-radius: inherit;
+    opacity: 0.2;
+    content: ''; 
+    pointer-events: none;
+    transition: opacity .2s;
+}

@@ -1,0 +1,11 @@
+footer{
+    width: 100vw;
+    height: 100vw;
+    opacity: 1;
+    background-color: rgb(74, 238, 197);
+}
+
+
+mat-slider{
+    width: 100%;
+}

@@ -1,0 +1,25 @@
+<p>comp2 works!</p>
+
+
+
+
+
+
+<div>
+    <span>
+        IQ of Kirsh (px): 
+    </span>
+        <b class="gridSizeValue">
+            {{gridsize.value}}
+        </b>
+</div>
+<footer>
+<mat-slider 
+    #gridsize 
+    (input)="updateSetting($event)"
+    step="5" min="100" max="1000" 
+    [value]="gridsize">
+</mat-slider>
+</footer>
+<div></div>
+aria-valuenow
